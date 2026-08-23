@@ -3,143 +3,237 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Research note by Arpit Pandey on why large ETH whale-flow should not be treated as a standalone trading signal after BTC benchmark adjustment.">
+
   <title>When Whale-Flow Fails | Arpit Pandey</title>
-  <meta property="og:title" content="When Whale-Flow Fails">
-  <meta property="og:description" content="Why large ETH transfers are not standalone trading signals after BTC benchmark adjustment.">
+
+  <meta
+    name="description"
+    content="Research note by Arpit Pandey on why large ETH whale-flow should not be treated as a standalone durable signal after BTC benchmark adjustment."
+  >
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#f3f0e7">
+
+  <link
+    rel="canonical"
+    href="https://arpitpandey9.github.io/research/whale-flow-failure.html"
+  >
+  <link rel="stylesheet" href="../portfolio.css">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://arpitpandey9.github.io/research/whale-flow-failure.html">
+  <meta property="og:title" content="When Whale-Flow Fails | Arpit Pandey">
+  <meta
+    property="og:description"
+    content="Why positive ETH whale-flow should not be treated as a standalone durable signal after BTC benchmark adjustment."
+  >
+
   <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="../styles.css">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <meta name="twitter:title" content="When Whale-Flow Fails | Arpit Pandey">
+  <meta
+    name="twitter:description"
+    content="Benchmark-adjusted validation of an ETH whale-flow signal."
+  >
 </head>
+
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <header class="topbar">
-    <a class="brand" href="../index.html">Arpit Pandey</a>
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="../index.html#case-study">Case Study</a>
-      <a href="../index.html#evidence">Evidence</a>
-      <a href="../index.html#research-notes">Notes</a>
-      <a href="../index.html#projects">Projects</a>
-      <a href="../index.html#standard">Standard</a>
-      <a href="https://github.com/ArpitPandey9">GitHub</a>
-    </nav>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="../index.html" aria-label="Arpit Pandey home">
+        <span class="brand-mark" aria-hidden="true">AP</span>
+        <span class="brand-name">Arpit Pandey</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#research">Research</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#standard">Standard</a>
+        <a
+          class="nav-external"
+          href="https://github.com/ArpitPandey9"
+          target="_blank"
+          rel="noopener noreferrer"
+        >GitHub ↗</a>
+      </nav>
+    </div>
   </header>
 
   <main id="main-content">
-    <article class="panel article">
-      <p class="eyebrow">Research Note 01</p>
-      <h1>When Whale-Flow Fails</h1>
-      <p class="lead">Why large ETH transfers are not standalone trading signals after BTC benchmark adjustment.</p>
+    <article class="research-note page-shell">
+      <header class="article-hero">
+        <p class="kicker">Research note 01 · Outcome validation</p>
 
-        <p class="article-disclaimer">
-          This research note is not financial advice and not a trading claim. It is a benchmark-adjusted research interpretation based on the current Crypto Research Engine validation samples.
+        <h1>When Whale-Flow Fails</h1>
+
+        <p class="article-deck">
+          Why large ETH transfers are not standalone trading signals after
+          BTC benchmark adjustment.
         </p>
 
-      <div class="article-meta">
-        <span>Arpit Pandey</span>
-        <span>Digital-asset research</span>
-        <span>Benchmark-adjusted validation</span>
+        <div class="article-meta">
+          <span>Arpit Pandey</span>
+          <span>Digital-asset research</span>
+          <span>Benchmark-adjusted validation</span>
+        </div>
+      </header>
+
+      <div class="article-layout">
+        <aside class="article-rail">
+          <div class="article-disclaimer">
+            <p class="mini-label">Scope</p>
+            <p>
+              This note documents a research result from the Crypto Research
+              Engine. It is not a trading recommendation. The figures below
+              should be read with the stated sample and liquidity limitations.
+            </p>
+          </div>
+
+          <a class="article-back" href="../index.html#research">
+            ← Back to research
+          </a>
+        </aside>
+
+        <div class="article-copy">
+          <section>
+            <h2>Thesis</h2>
+
+            <p>
+              Large on-chain ETH transfers can look important, but the validation
+              results show why positive whale-flow should not be treated as a
+              standalone durable signal.
+            </p>
+
+            <p>
+              The useful question is not simply whether ETH moved after a
+              whale-flow event. The useful question is whether ETH outperformed
+              a broader crypto benchmark after the signal appeared.
+            </p>
+          </section>
+
+          <section>
+            <h2>Signal tested</h2>
+
+            <p>
+              The Crypto Research Engine converts large on-chain transfers into
+              USD-denominated whale-flow pressure, creates rolling net-flow
+              signals, and evaluates those signals against +6h and +24h ETH
+              outcomes.
+            </p>
+
+            <p>
+              Outcomes are also adjusted against BTC. The system therefore asks
+              whether ETH outperformed BTC over the same window, rather than
+              treating a positive raw ETH move as sufficient validation.
+            </p>
+          </section>
+
+          <section>
+            <h2>What broke</h2>
+
+            <p>
+              In the first validation sample, the system generated a positive ETH
+              whale-flow signal with rolling net flow of about $1.9 million. ETH
+              had positive raw movement at the +6h horizon, but BTC performed
+              better over the same period. After benchmark adjustment, ETH
+              underperformed BTC by 0.1946%.
+            </p>
+
+            <p>
+              At the +24h horizon, ETH again underperformed after benchmark
+              adjustment, with abnormal return of -0.0977%. The signal was
+              classified as failed, with strong evidence and an
+              <code>unsupported_signal</code> failure mode.
+            </p>
+          </section>
+
+          <section>
+            <h2>Context-conditioned result</h2>
+
+            <p>
+              The later V4 analysis grouped validated records by context bucket,
+              volatility regime, and liquidity status. The strongest pattern was
+              not that whale-flow reliably worked. Many positive whale-flow cases
+              failed or reversed after BTC benchmark adjustment.
+            </p>
+
+            <p>
+              In that sample, the <code>volatility_only_context</code> group
+              contained 9 records: 1 worked, 6 failed, and 2 reversed. The
+              <code>extreme</code> volatility group contained 7 records: 1 worked
+              and 6 failed. That does not establish causality, but it shows why
+              context matters.
+            </p>
+          </section>
+
+          <section>
+            <h2>What this does not claim</h2>
+
+            <p>
+              This note does not claim that whale-flow is useless. It does not
+              claim that transfers cause price movement, that whale intent is
+              known, or that BTC is a perfect benchmark.
+            </p>
+
+            <p>
+              It makes a narrower claim: positive whale-flow can fail after
+              benchmark adjustment, and a research system should preserve that
+              failure rather than forcing every signal to look meaningful.
+            </p>
+          </section>
+
+          <section>
+            <h2>Main limitation</h2>
+
+            <p>
+              Liquidity remains the key blocker. Event-time liquidity context is
+              often stale or unavailable, so the project does not calculate
+              misleading flow-to-liquidity ratios or claim that DEX pool depth
+              absorbed or amplified the signal.
+            </p>
+
+            <p>
+              A stronger next step is event-time liquidity backfill or a
+              transparent liquidity proxy that can test whether failures and
+              reversals are associated with fragile liquidity, pool-depth
+              absorption, volatility-driven noise, or benchmark sensitivity.
+            </p>
+          </section>
+
+          <section>
+            <h2>Conclusion</h2>
+
+            <p>
+              The useful finding is not that the signal worked. The useful
+              finding is that it broke in a measurable way. A credible research
+              system should surface signals, show when they fail, identify the
+              context in which they fail, and preserve what evidence is still
+              missing.
+            </p>
+          </section>
+        </div>
       </div>
 
-      <section>
-        <h2>Thesis</h2>
-        <p>
-          Large on-chain ETH transfers can look important, but the current validation results suggest that
-          positive ETH whale-flow should not be treated as a standalone durable signal.
-        </p>
-        <p>
-          The useful question is not whether ETH moved after a whale-flow event. The useful question is whether
-          ETH outperformed a broader crypto benchmark after the signal appeared.
-        </p>
-      </section>
-
-      <section>
-        <h2>Signal tested</h2>
-        <p>
-          The Crypto Research Engine converts large on-chain transfers into USD-denominated whale-flow pressure,
-          creates rolling net-flow signals, and evaluates those signals against +6h and +24h ETH outcomes.
-        </p>
-        <p>
-          To avoid overclaiming, outcomes are adjusted against BTC. That means the system asks whether ETH
-          outperformed BTC over the same window, not simply whether ETH went up in raw price.
-        </p>
-      </section>
-
-      <section>
-        <h2>What broke</h2>
-        <p>
-          In the first validation sample, the system generated a positive ETH whale-flow signal with rolling net
-          flow of about $1.9 million. ETH had positive raw movement at the +6h horizon, but BTC performed better
-          over the same period. After benchmark adjustment, ETH underperformed BTC by 0.1946%.
-        </p>
-        <p>
-          At the +24h horizon, ETH again underperformed after benchmark adjustment, with abnormal return of
-          -0.0977%. The signal was therefore classified as failed, with strong evidence and an
-          <code>unsupported_signal</code> failure mode.
-        </p>
-      </section>
-
-      <section>
-        <h2>Context-conditioned result</h2>
-        <p>
-          The later V4 analysis grouped validated records by context bucket, volatility regime, and liquidity status.
-          The strongest pattern was not that whale-flow reliably worked. It was the opposite: many positive
-          whale-flow cases failed or reversed after BTC benchmark adjustment.
-        </p>
-        <p>
-          In the current sample, the <code>volatility_only_context</code> group contained 9 records: 1 worked,
-          6 failed, and 2 reversed. The <code>extreme</code> volatility group contained 7 records: 1 worked and
-          6 failed. That does not prove volatility caused the failure, but it shows why context matters.
-        </p>
-      </section>
-
-      <section>
-        <h2>What this does not claim</h2>
-        <p>
-          This note does not claim that whale-flow is useless. It also does not claim that transfers cause price
-          movement, that whale intent is known, or that BTC is a perfect benchmark.
-        </p>
-        <p>
-          It claims something narrower and more useful: positive whale-flow can fail after benchmark adjustment,
-          and a research system should make that failure visible instead of forcing every signal to look meaningful.
-        </p>
-      </section>
-
-      <section>
-        <h2>Main limitation</h2>
-        <p>
-          Liquidity remains the key blocker. Current event-time liquidity context is often stale or unavailable,
-          so the project does not calculate misleading flow-to-liquidity ratios or claim that DEX pool depth
-          absorbed or amplified the signal.
-        </p>
-        <p>
-          The next research upgrade is event-time liquidity backfill or a transparent liquidity proxy. That would
-          make it possible to test whether failures and reversals are linked to fragile liquidity, pool-depth
-          absorption, volatility-driven noise, or benchmark sensitivity.
-        </p>
-      </section>
-
-      <section>
-        <h2>Conclusion</h2>
-        <p>
-          The most useful finding is not that the signal worked. The useful finding is that the signal broke in a
-          measurable way. For digital-asset research, that matters. A credible research engine should not only
-          surface signals; it should also show when they fail, under what context, and what evidence is still missing.
-        </p>
-      </section>
-
       <div class="article-actions">
-        <a class="button primary" href="https://github.com/ArpitPandey9/crypto-research-engine">Open source repository</a>
-        <a class="button secondary" href="../index.html">Back to portfolio</a>
+        <a
+          class="button button-dark"
+          href="https://github.com/ArpitPandey9/crypto-research-engine"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Review repository ↗</a>
+
+        <a class="button button-quiet" href="../index.html">
+          Back to portfolio
+        </a>
       </div>
     </article>
   </main>
 
-  <footer class="footer">
-    <p>Arpit Pandey · Research Note 01 · <a href="https://github.com/ArpitPandey9">GitHub</a></p>
+  <footer class="footer page-shell">
+    <p>Arpit Pandey · Research Note 01</p>
+    <p>Evidence-driven digital-asset research</p>
   </footer>
 </body>
 </html>

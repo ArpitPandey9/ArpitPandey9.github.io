@@ -3,152 +3,503 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Arpit Pandey — digital-asset research portfolio focused on on-chain analytics, DeFi liquidity, protocol risk, and reproducible crypto market-structure research.">
-  <title>Arpit Pandey | Digital-Asset Research Portfolio</title>
-  <meta property="og:title" content="Arpit Pandey | Digital-Asset Research Portfolio">
-  <meta property="og:description" content="Crypto research portfolio focused on on-chain analytics, DeFi liquidity, protocol risk, and reproducible digital-asset research.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://arpitpandey9.github.io">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Arpit Pandey | Digital-Asset Research Portfolio">
-  <meta name="twitter:description" content="On-chain analytics, DeFi liquidity, protocol risk, and reproducible digital-asset research.">
-  <link rel="stylesheet" href="styles.css">
+
+  <title>Arpit Pandey | Digital Asset Controls & On-Chain Research</title>
+
+  <meta
+    name="description"
+    content="Arpit Pandey — institutional digital-asset controls, stablecoin settlement assurance, on-chain analytics, protocol verification, and evidence-driven crypto research."
+  >
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#f3f0e7">
+
+  <link rel="canonical" href="https://arpitpandey9.github.io/">
+  <link rel="stylesheet" href="portfolio.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arpitpandey9.github.io/">
+  <meta property="og:title" content="Arpit Pandey | Digital Asset Controls & On-Chain Research">
+  <meta
+    property="og:description"
+    content="Public proof-of-work across stablecoin settlement controls, on-chain evidence, protocol verification, and crypto market research."
+  >
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Arpit Pandey | Digital Asset Controls & On-Chain Research">
+  <meta
+    name="twitter:description"
+    content="Stablecoin settlement controls, on-chain evidence, protocol verification, and digital-asset research."
+  >
 </head>
+
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="topbar">
-    <a class="brand" href="#">Arpit Pandey</a>
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="#case-study">Case Study</a>
-      <a href="#evidence">Evidence</a>
-      <a href="#research-notes">Notes</a>
-      <a href="#projects">Projects</a>
-      <a href="#standard">Standard</a>
-      <a href="https://github.com/ArpitPandey9">GitHub</a>
-    </nav>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="Arpit Pandey home">
+        <span class="brand-mark" aria-hidden="true">AP</span>
+        <span class="brand-name">Arpit Pandey</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#about">About</a>
+        <a href="#standard">Standard</a>
+        <a
+          class="nav-external"
+          href="https://github.com/ArpitPandey9"
+          target="_blank"
+          rel="noopener noreferrer"
+        >GitHub ↗</a>
+      </nav>
+    </div>
   </header>
 
   <main id="main-content">
-    <section class="hero">
+    <section id="top" class="hero page-shell" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">Digital-asset research · on-chain analytics · protocol risk</p>
-        <h1>Crypto research built with evidence, controls, and reproducible data workflows.</h1>
-        <p class="lead">I build research-grade tools that turn raw blockchain and market data into tested signals, benchmark-adjusted validation, documented limitations, and decision-useful analytics for digital-asset research.</p>
-        <div class="actions">
-          <a class="button primary" href="https://github.com/ArpitPandey9/crypto-research-engine">Open flagship repository</a>
-          <a class="button secondary" href="#weth9-verification">Review WETH9 evidence</a>
+        <p class="kicker">Institutional digital assets · settlement controls · on-chain research</p>
+
+        <h1 id="hero-title">
+          Building evidence-driven systems for
+          <em>digital-asset settlement</em>
+          and research.
+        </h1>
+
+        <p class="hero-lede">
+          I’m Arpit Pandey. I work in institutional financial operations and build
+          systems that connect settlement instructions with public on-chain evidence —
+          from Base / USDC controls to protocol verification and digital-asset research.
+        </p>
+
+        <div class="hero-actions">
+          <a
+            class="button button-dark"
+            href="https://github.com/ArpitPandey9/institutional-digital-asset-controls"
+            target="_blank"
+            rel="noopener noreferrer"
+          >View control plane ↗</a>
+
+          <a class="button button-quiet" href="#work">Review the work</a>
         </div>
+
       </div>
 
-      <aside class="desk-card" aria-label="Research desk snapshot">
-        <p class="desk-label">Research desk snapshot</p>
-        <h2>Whale-flow is treated as a hypothesis, not a trading claim.</h2>
-        <div class="metric-row">
-          <div><strong>214</strong> <span>tests passing</span></div>
-          <div><strong>91%</strong> <span>coverage</span></div>
-          <div><strong>CI</strong> <span>green on main</span></div>
+      <aside class="flagship-snapshot" aria-label="Current flagship project">
+        <div class="snapshot-top">
+          <span>Current flagship</span>
+          <span class="snapshot-state">PUBLIC MVP</span>
         </div>
-        <p class="desk-note">Current validation suggests positive ETH whale-flow should not be treated as a standalone durable signal after BTC benchmark adjustment.</p>
+
+        <p class="snapshot-index">01 / CONTROL SYSTEM</p>
+
+        <h2>Institutional Digital Asset Control Plane</h2>
+
+        <p class="snapshot-copy">
+          A Base / USDC settlement-assurance workflow that separates what an
+          institution expected from what actually happened on-chain, then preserves
+          independent control findings for audit.
+        </p>
+
+        <div class="snapshot-metrics">
+          <div>
+            <strong>64</strong>
+            <span>tests passing</span>
+          </div>
+          <div>
+            <strong>10</strong>
+            <span>control checks</span>
+          </div>
+          <div>
+            <strong>8453</strong>
+            <span>Base Mainnet</span>
+          </div>
+        </div>
+
+        <div class="snapshot-rule">
+          <span class="status-dot status-pass" aria-hidden="true"></span>
+          PASS
+          <span class="status-dot status-fail" aria-hidden="true"></span>
+          FAIL
+          <span class="status-dot status-unknown" aria-hidden="true"></span>
+          UNKNOWN
+        </div>
       </aside>
     </section>
 
-    <section id="case-study" class="panel case-panel">
-      <div class="panel-heading">
-        <p class="eyebrow">Flagship case study</p>
-        <h2>Crypto Research Engine</h2>
-        <p>An on-chain whale-flow research engine for market structure, DeFi liquidity context, and benchmark-adjusted signal validation.</p>
-      </div>
-
-      <div class="pipeline">
-        <div><span>01</span><strong>Observe</strong><p>Large on-chain transfer events are detected and stored.</p></div>
-        <div><span>02</span><strong>Normalize</strong><p>Token movement is converted into USD-denominated flow pressure.</p></div>
-        <div><span>03</span><strong>Validate</strong><p>Signals are tested against BTC benchmark-adjusted future outcomes.</p></div>
-        <div><span>04</span><strong>Contextualize</strong><p>Event-time volatility and liquidity context are attached conservatively.</p></div>
-      </div>
-    </section>
-
-    <section id="evidence" class="panel split-panel">
+    <section class="proof-strip page-shell" aria-label="Portfolio focus">
       <div>
-        <p class="eyebrow">Evidence layer</p>
-        <h2>Evidence, not resume claims.</h2>
-        <p>The flagship repository is structured as public proof-of-work: source code, tests, CI, sample artifacts, research notes, data-reproducibility documentation, and explicit limitations around stale liquidity, benchmark adjustment, and causality.</p>
+        <span class="proof-label">Domain</span>
+        <strong>Digital assets & stablecoins</strong>
       </div>
-      <div class="evidence-list">
-        <a href="https://github.com/ArpitPandey9/crypto-research-engine">Repository</a>
-        <a href="https://github.com/ArpitPandey9/crypto-research-engine/tree/main/docs">Research notes</a>
-        <a href="https://github.com/ArpitPandey9/crypto-research-engine/tree/main/data/samples">Sample artifacts</a>
-        <a href="https://github.com/ArpitPandey9/crypto-research-engine/blob/main/docs/DATA_REPRODUCIBILITY.md">Data reproducibility</a>
+      <div>
+        <span class="proof-label">Control lens</span>
+        <strong>Settlement, evidence & auditability</strong>
+      </div>
+      <div>
+        <span class="proof-label">Technical lens</span>
+        <strong>Python, SQL, EVM & JSON-RPC</strong>
+      </div>
+      <div>
+        <span class="proof-label">Research lens</span>
+        <strong>On-chain analytics & protocol verification</strong>
       </div>
     </section>
 
-      <section id="weth9-verification" class="panel split-panel">
-        <div>
-          <p class="eyebrow">Protocol verification case study</p>
-          <h2>WETH9 Large Deposits: Event-Level Verification</h2>
-          <p>A fixed-window Ethereum investigation that separates function-selector evidence from verified protocol execution. The canonical row-level dataset contains 135 successful native-ETH calls of at least 1,000 ETH to WETH9 from 56 sender addresses.</p>
-          <div class="metric-row">
-            <div><strong>135 / 135</strong> <span>fully verified</span></div>
-            <div><strong>128 + 7</strong> <span>selector-only + trailing</span></div>
-            <div><strong>5 / 1 / 1</strong> <span>observed trailing patterns</span></div>
+    <section id="work" class="section page-shell" aria-labelledby="work-title">
+      <div class="section-heading">
+        <p class="kicker">Featured system</p>
+        <h2 id="work-title">Settlement controls built around evidence, not assumptions.</h2>
+        <p>
+          The control plane asks a simple institutional question: if a settlement
+          instruction says one thing and the blockchain records another, what can
+          we prove — and what must remain unknown?
+        </p>
+      </div>
+
+      <article class="flagship-case">
+        <div class="case-intro">
+          <div class="case-number">01</div>
+
+          <div>
+            <p class="case-type">Stablecoin settlement assurance</p>
+            <h3>Institutional Digital Asset Control Plane</h3>
+
+            <p>
+              An engineering MVP for strict direct-transfer reconciliation on Base
+              Mainnet using canonical USDC reference data and auditable,
+              evidence-aware control outcomes.
+            </p>
+
+            <div class="case-links">
+              <a
+                href="https://github.com/ArpitPandey9/institutional-digital-asset-controls"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Repository ↗</a>
+              <a
+                href="https://github.com/ArpitPandey9/institutional-digital-asset-controls#readme"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Read architecture ↗</a>
+            </div>
           </div>
-          <p>The evidence establishes Deposit-event presence, exact amount-sum equality, and sender-to-Deposit-destination consistency. It does not attribute semantic meaning, wallet software, entity ownership, shared infrastructure, or economic intent to the trailing bytes.</p>
         </div>
-        <div class="evidence-list">
-          <a href="https://dune.com/queries/8299357">Canonical row-level evidence</a>
-          <a href="https://dune.com/arpitpandey/weth9-large-deposits-event-level-verification">Live Dune dashboard</a>
-          <a href="https://github.com/ArpitPandey9/crypto-research-engine/blob/main/docs/WETH9_EVENT_LEVEL_VERIFICATION.md">GitHub case study</a>
-          <a href="https://github.com/ArpitPandey9/crypto-research-engine/blob/main/docs/DATA_REPRODUCIBILITY.md">Reproducibility notes</a>
-        </div>
-      </section>
 
-    <section id="research-notes" class="panel split-panel">
-      <div>
-        <p class="eyebrow">Research notes</p>
-        <h2>When Whale-Flow Fails</h2>
-        <p>A short research note on why positive ETH whale-flow should not be treated as a standalone durable signal after BTC benchmark adjustment.</p>
-      </div>
-      <div class="evidence-list">
-        <a href="research/whale-flow-failure.html">Read Research Note 01</a>
-        <a href="https://github.com/ArpitPandey9/crypto-research-engine/blob/main/docs/OUTCOME_VALIDATION_RESEARCH_NOTE.md">Outcome validation note</a>
-        <a href="https://github.com/ArpitPandey9/crypto-research-engine/blob/main/docs/CONTEXT_CONDITIONED_OUTCOME_RESEARCH_NOTE_V4.md">Historical V4 context-conditioned note</a>
+        <div class="architecture" aria-label="Settlement control architecture">
+          <div class="architecture-step">
+            <span>01</span>
+            <strong>Expected instruction</strong>
+            <p>Modeled chain, asset, sender, receiver, amount and business asset identity.</p>
+          </div>
+
+          <div class="architecture-step">
+            <span>02</span>
+            <strong>Observed evidence</strong>
+            <p>RPC chain identity, receipt status, block identity and decoded ERC-20 transfer evidence.</p>
+          </div>
+
+          <div class="architecture-step">
+            <span>03</span>
+            <strong>Independent controls</strong>
+            <p>Each control evaluates only the evidence it actually requires.</p>
+          </div>
+
+          <div class="architecture-step">
+            <span>04</span>
+            <strong>Audit bundle</strong>
+            <p>Normalized findings plus detailed underlying results, without a premature business verdict.</p>
+          </div>
+        </div>
+
+        <div class="control-layout">
+          <div class="control-copy">
+            <p class="mini-label">Control coverage</p>
+            <h4>Execution success is not settlement correctness.</h4>
+            <p>
+              A transaction can execute successfully while chain, asset, sender,
+              receiver, amount, finality, uniqueness, or canonical-asset controls
+              independently identify a problem.
+            </p>
+          </div>
+
+          <div class="control-grid" aria-label="Implemented controls">
+            <span>Execution</span>
+            <span>Chain</span>
+            <span>Asset</span>
+            <span>Sender</span>
+            <span>Receiver</span>
+            <span>Amount</span>
+            <span>Finality</span>
+            <span>Instruction uniqueness</span>
+            <span>Transfer uniqueness</span>
+            <span>Canonical asset</span>
+          </div>
+        </div>
+
+        <div class="principle-row">
+          <div>
+            <span>01</span>
+            <strong>Consistency ≠ validity</strong>
+            <p>Expected and observed data can match while the asset itself is not the approved canonical asset.</p>
+          </div>
+
+          <div>
+            <span>02</span>
+            <strong>Missing evidence ≠ failure</strong>
+            <p>Required evidence that is unavailable produces an explicit UNKNOWN rather than an invented conclusion.</p>
+          </div>
+
+          <div>
+            <span>03</span>
+            <strong>Control finding ≠ business disposition</strong>
+            <p>The orchestrator preserves findings; a separate policy layer would determine HOLD, REVIEW or REJECT.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="research" class="section section-muted" aria-labelledby="research-title">
+      <div class="page-shell">
+        <div class="section-heading">
+          <p class="kicker">Research & verification</p>
+          <h2 id="research-title">The same evidence discipline, applied to markets and protocols.</h2>
+          <p>
+            Research is treated as something that can fail. Protocol evidence is
+            separated from interpretation, and missing data is reported rather than
+            filled with convenient assumptions.
+          </p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card research-card-wide">
+            <div class="card-meta">
+              <span>02 / Research system</span>
+              <span>Python · SQL · EVM</span>
+            </div>
+
+            <h3>Crypto Research Engine</h3>
+
+            <p>
+              A tested whale-flow research pipeline combining on-chain transfer
+              detection, USD normalization, liquidity and volatility context,
+              benchmark-adjusted outcome validation, persistent research datasets,
+              backtesting, and a Streamlit analysis surface.
+            </p>
+
+            <p class="card-finding">
+              Current research direction: determine when large on-chain flow becomes
+              decision-useful — and when it is simply noise.
+            </p>
+
+            <div class="card-links">
+              <a
+                href="https://github.com/ArpitPandey9/crypto-research-engine"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Repository ↗</a>
+              <a href="research/whale-flow-failure.html">Research note →</a>
+            </div>
+          </article>
+
+          <article class="research-card">
+            <div class="card-meta">
+              <span>03 / Protocol verification</span>
+              <span>Ethereum · Dune</span>
+            </div>
+
+            <h3>WETH9 Large Deposits</h3>
+
+            <p>
+              Event-level verification of 135 successful native-ETH WETH9 calls of
+              at least 1,000 ETH, separating selector evidence from verified protocol
+              execution.
+            </p>
+
+            <div class="evidence-stats">
+              <div><strong>135 / 135</strong><span>verified</span></div>
+              <div><strong>56</strong><span>senders</span></div>
+              <div><strong>7</strong><span>trailing-calldata calls</span></div>
+            </div>
+
+            <div class="card-links">
+              <a
+                href="https://dune.com/arpitpandey/weth9-large-deposits-event-level-verification"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Dune dashboard ↗</a>
+              <a
+                href="https://github.com/ArpitPandey9/crypto-research-engine/blob/main/docs/WETH9_EVENT_LEVEL_VERIFICATION.md"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Case study ↗</a>
+            </div>
+          </article>
+
+          <article class="research-card">
+            <div class="card-meta">
+              <span>04 / Research note</span>
+              <span>Outcome validation</span>
+            </div>
+
+            <h3>When Whale-Flow Fails</h3>
+
+            <p>
+              A short note documenting why positive ETH whale-flow should not be
+              treated as a standalone durable signal after BTC benchmark adjustment.
+              A failed hypothesis is preserved as research evidence rather than
+              rewritten as a success.
+            </p>
+
+            <div class="card-links">
+              <a href="research/whale-flow-failure.html">Read note →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="archive-row">
+          <p>Additional public work</p>
+
+          <div>
+            <a
+              href="https://github.com/ArpitPandey9/crypto-data-foundation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Data foundation ↗</a>
+
+            <a
+              href="https://github.com/ArpitPandey9/digital-assets-index-lab"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Index research ↗</a>
+
+            <a
+              href="https://github.com/ArpitPandey9/defi-tokenomics-dashboard"
+              target="_blank"
+              rel="noopener noreferrer"
+            >DeFi analytics ↗</a>
+
+            <a
+              href="https://github.com/ArpitPandey9/fund-me-solidity"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Solidity / Foundry ↗</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="panel">
-      <div class="panel-heading">
-        <p class="eyebrow">Selected systems</p>
-        <h2>Portfolio map</h2>
-        <p>Projects are organized around research, data quality, DeFi analytics, risk, and protocol literacy.</p>
+    <section id="about" class="section page-shell about-layout" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="kicker">About</p>
+        <h2 id="about-title">Financial operations on one side. On-chain systems on the other.</h2>
       </div>
 
-      <div class="project-grid">
-        <a href="https://github.com/ArpitPandey9/crypto-research-engine"><span>Flagship</span><strong>crypto-research-engine</strong><p>Whale-flow validation, point-in-time price provenance, V5 next-open execution, benchmark-adjusted outcome validation, WETH9 event-level verification, Dune evidence, tests, and CI.</p></a>
-        <a href="https://github.com/ArpitPandey9/crypto-data-foundation"><span>Data foundation</span><strong>crypto-data-foundation</strong><p>Audit-oriented crypto data spine for reproducible digital-asset research.</p></a>
-        <a href="https://github.com/ArpitPandey9/digital-assets-index-lab"><span>Index research</span><strong>digital-assets-index-lab</strong><p>Digital-asset index methodology, data-quality checks, and source-tagged research outputs.</p></a>
-        <a href="https://github.com/ArpitPandey9/defi-tokenomics-dashboard"><span>DeFi analytics</span><strong>defi-tokenomics-dashboard</strong><p>Tokenomics dashboard with market data, TVL context, fallbacks, and graceful errors.</p></a>
-        <a href="https://github.com/ArpitPandey9/crypto-volatility-regime-classifier"><span>Risk model</span><strong>crypto-volatility-regime-classifier</strong><p>Volatility-regime classification for crypto risk and market-structure analysis.</p></a>
-        <a href="https://github.com/ArpitPandey9/fund-me-solidity"><span>Protocol literacy</span><strong>fund-me-solidity</strong><p>Foundry/Solidity project showing smart-contract and protocol-level fundamentals.</p></a>
+      <div class="about-copy">
+        <p class="about-lead">
+          I currently work in institutional financial operations at S&amp;P Global.
+          My public work is focused on understanding the bridge between traditional
+          control logic and blockchain-based financial infrastructure.
+        </p>
+
+        <p>
+          I care about questions that sit between business intent and technical
+          evidence: what was supposed to settle, what actually happened on-chain,
+          which evidence is authoritative, how exceptions should be surfaced, and
+          where a system must refuse to make a claim.
+        </p>
+
+        <p>
+          I’m building a focused body of work around digital-asset settlement,
+          controls, operations, protocol verification, and evidence-driven research —
+          with enough technical depth for the underlying evidence to be reviewed.
+        </p>
+
+        <p class="independence-note">
+          This portfolio represents personal research and engineering work only.
+          It does not represent S&amp;P Global, its clients, or any production
+          financial system.
+        </p>
       </div>
     </section>
 
-    <section id="standard" class="panel standard-panel">
-      <div>
-        <p class="eyebrow">Operating standard</p>
-        <h2>Built for review by technical and financial audiences.</h2>
+    <section id="standard" class="section standard-section" aria-labelledby="standard-title">
+      <div class="page-shell">
+        <div class="section-heading">
+          <p class="kicker">Operating standard</p>
+          <h2 id="standard-title">Claims should survive review.</h2>
+          <p>
+            The standard across these projects is deliberately conservative:
+            preserve evidence, show limitations, and do not convert uncertainty into
+            a stronger claim than the data supports.
+          </p>
+        </div>
+
+        <div class="standard-grid">
+          <article>
+            <span>01</span>
+            <h3>Public evidence only</h3>
+            <p>No client data, production settlement data, credentials, or private operational information in public work.</p>
+          </article>
+
+          <article>
+            <span>02</span>
+            <h3>No fake completeness</h3>
+            <p>Unavailable evidence remains unavailable. Missing data is never silently replaced with synthetic facts.</p>
+          </article>
+
+          <article>
+            <span>03</span>
+            <h3>Independent controls</h3>
+            <p>A failure in one control does not rewrite the evidence produced by another independent control.</p>
+          </article>
+
+          <article>
+            <span>04</span>
+            <h3>Explicit limitations</h3>
+            <p>Engineering MVPs and research prototypes are described as such rather than presented as production systems.</p>
+          </article>
+        </div>
       </div>
-      <ul class="standard-list">
-        <li>No fake data substitution</li>
-        <li>No causality claims from transfers alone</li>
-        <li>Signals tested against outcomes</li>
-        <li>Missing data reported as unavailable</li>
-        <li>Limitations documented before conclusions</li>
-      </ul>
+    </section>
+
+    <section class="closing page-shell" aria-labelledby="closing-title">
+      <p class="kicker">Open work</p>
+      <h2 id="closing-title">Interested in the intersection of finance, controls and on-chain infrastructure?</h2>
+
+      <p>
+        The repositories are public so the architecture, tests, assumptions,
+        limitations, and commit history can be reviewed directly.
+      </p>
+
+      <div class="hero-actions">
+        <a
+          class="button button-dark"
+          href="https://github.com/ArpitPandey9"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Review GitHub ↗</a>
+
+        <a
+          class="button button-quiet"
+          href="https://www.linkedin.com/in/ACoAADVvCjwBXaQuv5C_cg22PLvy0SOEme4x2IU"
+          target="_blank"
+          rel="noopener noreferrer"
+        >LinkedIn ↗</a>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>Arpit Pandey · Digital-asset research portfolio · <a href="https://github.com/ArpitPandey9">GitHub</a></p>
+  <footer class="footer page-shell">
+    <p>Arpit Pandey · New Delhi, India</p>
+
+    <p>
+      Digital asset controls · stablecoin settlement · on-chain research
+    </p>
+
   </footer>
 </body>
 </html>
