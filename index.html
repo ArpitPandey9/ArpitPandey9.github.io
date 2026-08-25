@@ -61,29 +61,29 @@
   <main id="main-content">
     <section id="top" class="hero page-shell" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="kicker">Institutional digital assets · settlement controls · on-chain research</p>
+        <p class="kicker">On-chain market intelligence · digital asset research · DeFi / market structure</p>
 
         <h1 id="hero-title">
           Building evidence-driven systems for
-          <em>digital-asset settlement</em>
-          and research.
+          <em>on-chain markets</em>
+          and digital-asset research.
         </h1>
 
         <p class="hero-lede">
           I’m Arpit Pandey. I work in institutional financial operations and build
-          systems that connect settlement instructions with public on-chain evidence —
-          from Base / USDC controls to protocol verification and digital-asset research.
+          public research systems that connect blockchain evidence with market context —
+          from on-chain flows and liquidity to protocol verification and institutional controls.
         </p>
 
         <div class="hero-actions">
           <a
             class="button button-dark"
-            href="https://github.com/ArpitPandey9/institutional-digital-asset-controls"
+            href="https://github.com/ArpitPandey9/crypto-research-engine"
             target="_blank"
             rel="noopener noreferrer"
-          >View control plane ↗</a>
+          >View research engine ↗</a>
 
-          <a class="button button-quiet" href="#work">Review the work</a>
+          <a class="button button-quiet" href="#research">Review the research</a>
         </div>
 
       </div>
@@ -91,31 +91,31 @@
       <aside class="flagship-snapshot" aria-label="Current flagship project">
         <div class="snapshot-top">
           <span>Current flagship</span>
-          <span class="snapshot-state">PUBLIC MVP</span>
+          <span class="snapshot-state">RESEARCH SYSTEM</span>
         </div>
 
-        <p class="snapshot-index">01 / CONTROL SYSTEM</p>
+        <p class="snapshot-index">01 / MARKET RESEARCH</p>
 
-        <h2>Institutional Digital Asset Control Plane</h2>
+        <h2>Crypto Research Engine</h2>
 
         <p class="snapshot-copy">
-          A Base / USDC settlement-assurance workflow that separates what an
-          institution expected from what actually happened on-chain, then preserves
-          independent control findings for audit.
+          A reproducible on-chain market research system that tests whale-flow
+          hypotheses against liquidity, volatility and BTC benchmark-adjusted outcomes
+          while preserving failed signals, uncertainty and methodological limitations.
         </p>
 
         <div class="snapshot-metrics">
           <div>
-            <strong>64</strong>
+            <strong>214</strong>
             <span>tests passing</span>
           </div>
           <div>
-            <strong>10</strong>
-            <span>control checks</span>
+            <strong>91%</strong>
+            <span>total coverage</span>
           </div>
           <div>
-            <strong>8453</strong>
-            <span>Base Mainnet</span>
+            <strong>CI</strong>
+            <span>green</span>
           </div>
         </div>
 
@@ -149,9 +149,142 @@
       </div>
     </section>
 
-    <section id="work" class="section page-shell" aria-labelledby="work-title">
+    <section id="research" class="section section-muted" aria-labelledby="research-title">
+      <div class="page-shell">
+        <div class="section-heading">
+          <p class="kicker">Research & verification</p>
+          <h2 id="research-title">The same evidence discipline, applied to markets and protocols.</h2>
+          <p>
+            Research is treated as something that can fail. Protocol evidence is
+            separated from interpretation, and missing data is reported rather than
+            filled with convenient assumptions.
+          </p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card research-card-wide">
+            <div class="card-meta">
+              <span>01 / Research system</span>
+              <span>Python · SQL · EVM</span>
+            </div>
+
+            <h3>Crypto Research Engine</h3>
+
+            <p>
+              A tested whale-flow research pipeline combining on-chain transfer
+              detection, USD normalization, liquidity and volatility context,
+              benchmark-adjusted outcome validation, persistent research datasets,
+              backtesting, and a Streamlit analysis surface.
+
+              <strong>Current verification: 214 tests passing · 91% coverage · green CI.</strong>
+            </p>
+
+            <p class="card-finding">
+              Current research direction: determine when large on-chain flow becomes
+              decision-useful — and when it is simply noise.
+            </p>
+
+            <div class="card-links">
+              <a
+                href="https://github.com/ArpitPandey9/crypto-research-engine"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Repository ↗</a>
+              <a href="research/whale-flow-failure.html">Research note →</a>
+            </div>
+          </article>
+
+          <article class="research-card">
+            <div class="card-meta">
+              <span>02 / Protocol verification</span>
+              <span>Ethereum · Dune</span>
+            </div>
+
+            <h3>WETH9 Large Deposits</h3>
+
+            <p>
+              Event-level verification of 135 successful native-ETH WETH9 calls of
+              at least 1,000 ETH, separating selector evidence from verified protocol
+              execution.
+            </p>
+
+            <div class="evidence-stats">
+              <div><strong>135 / 135</strong><span>verified</span></div>
+              <div><strong>56</strong><span>senders</span></div>
+              <div><strong>7</strong><span>trailing-calldata calls</span></div>
+            </div>
+
+            <div class="card-links">
+              <a
+                href="https://dune.com/arpitpandey/weth9-large-deposits-event-level-verification"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Dune dashboard ↗</a>
+              <a
+                href="https://github.com/ArpitPandey9/crypto-research-engine/blob/main/docs/WETH9_EVENT_LEVEL_VERIFICATION.md"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Case study ↗</a>
+            </div>
+          </article>
+
+          <article class="research-card">
+            <div class="card-meta">
+              <span>03 / Research note</span>
+              <span>Outcome validation</span>
+            </div>
+
+            <h3>When Whale-Flow Fails</h3>
+
+            <p>
+              A short note documenting why positive ETH whale-flow should not be
+              treated as a standalone durable signal after BTC benchmark adjustment.
+              A failed hypothesis is preserved as research evidence rather than
+              rewritten as a success.
+            </p>
+
+            <div class="card-links">
+              <a href="research/whale-flow-failure.html">Read note →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="archive-row">
+          <p>Additional public work</p>
+
+          <div>
+            <a
+              href="https://github.com/ArpitPandey9/crypto-data-foundation"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Data foundation ↗</a>
+
+            <a
+              href="https://github.com/ArpitPandey9/digital-assets-index-lab"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Index research ↗</a>
+
+            <a
+              href="https://github.com/ArpitPandey9/defi-tokenomics-dashboard"
+              target="_blank"
+              rel="noopener noreferrer"
+            >DeFi analytics ↗</a>
+
+            <a
+              href="https://github.com/ArpitPandey9/fund-me-solidity"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Solidity / Foundry ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<section id="work" class="section page-shell" aria-labelledby="work-title">
       <div class="section-heading">
-        <p class="kicker">Featured system</p>
+        <p class="kicker">Institutional controls system</p>
         <h2 id="work-title">Settlement controls built around evidence, not assumptions.</h2>
         <p>
           The control plane asks a simple institutional question: if a settlement
@@ -162,7 +295,7 @@
 
       <article class="flagship-case">
         <div class="case-intro">
-          <div class="case-number">01</div>
+          <div class="case-number">04</div>
 
           <div>
             <p class="case-type">Stablecoin settlement assurance</p>
@@ -260,136 +393,6 @@
           </div>
         </div>
       </article>
-    </section>
-
-    <section id="research" class="section section-muted" aria-labelledby="research-title">
-      <div class="page-shell">
-        <div class="section-heading">
-          <p class="kicker">Research & verification</p>
-          <h2 id="research-title">The same evidence discipline, applied to markets and protocols.</h2>
-          <p>
-            Research is treated as something that can fail. Protocol evidence is
-            separated from interpretation, and missing data is reported rather than
-            filled with convenient assumptions.
-          </p>
-        </div>
-
-        <div class="research-grid">
-          <article class="research-card research-card-wide">
-            <div class="card-meta">
-              <span>02 / Research system</span>
-              <span>Python · SQL · EVM</span>
-            </div>
-
-            <h3>Crypto Research Engine</h3>
-
-            <p>
-              A tested whale-flow research pipeline combining on-chain transfer
-              detection, USD normalization, liquidity and volatility context,
-              benchmark-adjusted outcome validation, persistent research datasets,
-              backtesting, and a Streamlit analysis surface.
-            </p>
-
-            <p class="card-finding">
-              Current research direction: determine when large on-chain flow becomes
-              decision-useful — and when it is simply noise.
-            </p>
-
-            <div class="card-links">
-              <a
-                href="https://github.com/ArpitPandey9/crypto-research-engine"
-                target="_blank"
-                rel="noopener noreferrer"
-              >Repository ↗</a>
-              <a href="research/whale-flow-failure.html">Research note →</a>
-            </div>
-          </article>
-
-          <article class="research-card">
-            <div class="card-meta">
-              <span>03 / Protocol verification</span>
-              <span>Ethereum · Dune</span>
-            </div>
-
-            <h3>WETH9 Large Deposits</h3>
-
-            <p>
-              Event-level verification of 135 successful native-ETH WETH9 calls of
-              at least 1,000 ETH, separating selector evidence from verified protocol
-              execution.
-            </p>
-
-            <div class="evidence-stats">
-              <div><strong>135 / 135</strong><span>verified</span></div>
-              <div><strong>56</strong><span>senders</span></div>
-              <div><strong>7</strong><span>trailing-calldata calls</span></div>
-            </div>
-
-            <div class="card-links">
-              <a
-                href="https://dune.com/arpitpandey/weth9-large-deposits-event-level-verification"
-                target="_blank"
-                rel="noopener noreferrer"
-              >Dune dashboard ↗</a>
-              <a
-                href="https://github.com/ArpitPandey9/crypto-research-engine/blob/main/docs/WETH9_EVENT_LEVEL_VERIFICATION.md"
-                target="_blank"
-                rel="noopener noreferrer"
-              >Case study ↗</a>
-            </div>
-          </article>
-
-          <article class="research-card">
-            <div class="card-meta">
-              <span>04 / Research note</span>
-              <span>Outcome validation</span>
-            </div>
-
-            <h3>When Whale-Flow Fails</h3>
-
-            <p>
-              A short note documenting why positive ETH whale-flow should not be
-              treated as a standalone durable signal after BTC benchmark adjustment.
-              A failed hypothesis is preserved as research evidence rather than
-              rewritten as a success.
-            </p>
-
-            <div class="card-links">
-              <a href="research/whale-flow-failure.html">Read note →</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="archive-row">
-          <p>Additional public work</p>
-
-          <div>
-            <a
-              href="https://github.com/ArpitPandey9/crypto-data-foundation"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Data foundation ↗</a>
-
-            <a
-              href="https://github.com/ArpitPandey9/digital-assets-index-lab"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Index research ↗</a>
-
-            <a
-              href="https://github.com/ArpitPandey9/defi-tokenomics-dashboard"
-              target="_blank"
-              rel="noopener noreferrer"
-            >DeFi analytics ↗</a>
-
-            <a
-              href="https://github.com/ArpitPandey9/fund-me-solidity"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Solidity / Foundry ↗</a>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section id="about" class="section page-shell about-layout" aria-labelledby="about-title">
